@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smartfon24 | Base UI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { jakarta: ["Plus Jakarta Sans", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-jakarta bg-slate-100 text-slate-800">
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
+      <a href="index.html" class="text-lg font-extrabold">Smartfon24</a>
+      <nav class="hidden gap-6 text-sm font-semibold md:flex">
+        <a class="hover:text-blue-700" href="index.html">Bosh sahifa</a>
+        <a class="hover:text-blue-700" href="about.html">Biz haqimizda</a>
+        <a class="hover:text-blue-700" href="contack.html">Aloqa</a>
+        <a class="hover:text-blue-700" href="login.html">Kirish</a>
+        <a class="hover:text-blue-700" href="register.html">Ro‘yxatdan o‘tish</a>
+        <a class="text-blue-700" href="base.html">Base</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-4 py-12 md:px-6 fade-in-up">
+    <section class="hover-lift rounded-3xl bg-white p-8 shadow-sm">
+      <p class="text-sm font-bold uppercase tracking-[0.2em] text-blue-700">Base UI sahifa</p>
+      <h1 class="mt-3 text-4xl font-extrabold text-slate-900">Smartfon24 dizayn asosi</h1>
+      <p class="mt-3 text-slate-600">Bu sahifa sizning keyingi bo‘limlaringiz uchun tayyor komponentlar va uslublarni ko‘rsatadi.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <button class="btn-pop rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white hover:bg-blue-700">Asosiy tugma</button>
+        <button class="btn-pop rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-700 hover:border-blue-400 hover:text-blue-700">Ikkinchi tugma</button>
+      </div>
+    </section>
+
+    <section class="mt-8 grid gap-6 md:grid-cols-3">
+      <article class="hover-lift rounded-3xl border border-slate-200 bg-white p-5">
+        <img src="https://images.unsplash.com/photo-1510552776732-7198cf86f16f?auto=format&fit=crop&w=800&q=80" alt="Telefon reklama kartasi" class="image-zoom h-44 w-full rounded-2xl object-cover" />
+        <h2 class="mt-4 text-lg font-bold">Smartfon reklama bloki</h2>
+        <p class="mt-2 text-sm text-slate-600">Yangi kolleksiya uchun banner kartasi namunasi.</p>
+      </article>
+      <article class="hover-lift rounded-3xl border border-slate-200 bg-white p-5">
+        <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=800&q=80" alt="Kompyuter reklama kartasi" class="image-zoom h-44 w-full rounded-2xl object-cover" />
+        <h2 class="mt-4 text-lg font-bold">Kompyuter reklama bloki</h2>
+        <p class="mt-2 text-sm text-slate-600">Savdo sahifalari uchun tayyor karta dizayni.</p>
+      </article>
+      <article class="hover-lift rounded-3xl border border-slate-200 bg-white p-5">
+        <img src="https://images.unsplash.com/photo-1624705002806-5d72df19c3f6?auto=format&fit=crop&w=800&q=80" alt="Servis reklama kartasi" class="image-zoom h-44 w-full rounded-2xl object-cover" />
+        <h2 class="mt-4 text-lg font-bold">Servis reklama bloki</h2>
+        <p class="mt-2 text-sm text-slate-600">24/7 texnik xizmatni ta’kidlash uchun promo karta.</p>
+      </article>
+    </section>
+    <section class="mt-8 ad-marquee">
+      <div class="ad-track">
+        <span class="ad-item">🎉 Smartfon24 Base Demo Banner</span>
+        <span class="ad-item">⚙️ UI elementlar animatsiya bilan</span>
+        <span class="ad-item">📦 Reklama bloklari jonli harakatda</span>
+        <span class="ad-item">🎉 Smartfon24 Base Demo Banner</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

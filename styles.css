@@ -1,0 +1,124 @@
+:root {
+  --smartfon24-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hover-lift {
+  transition: transform 0.35s var(--smartfon24-ease), box-shadow 0.35s var(--smartfon24-ease);
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.14);
+}
+
+.btn-pop {
+  transition: transform 0.28s var(--smartfon24-ease), box-shadow 0.28s var(--smartfon24-ease);
+}
+
+.btn-pop:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.3);
+}
+
+.image-zoom {
+  transition: transform 0.45s var(--smartfon24-ease), filter 0.45s var(--smartfon24-ease);
+}
+
+.image-zoom:hover {
+  transform: scale(1.045);
+  filter: saturate(1.08);
+}
+
+.float-soft {
+  animation: floatSoft 5.2s ease-in-out infinite;
+}
+
+.pulse-soft {
+  animation: pulseSoft 2.6s ease-in-out infinite;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s var(--smartfon24-ease) both;
+}
+
+.ad-marquee {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  white-space: nowrap;
+}
+
+.ad-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  width: max-content;
+  animation: adMove 22s linear infinite;
+}
+
+.ad-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes adMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

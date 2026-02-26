@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smartfon24 | Ro‘yxatdan o‘tish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { jakarta: ["Plus Jakarta Sans", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-jakarta min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-100 text-slate-800">
+  <main class="mx-auto flex min-h-screen max-w-7xl items-center px-4 py-10 md:px-6">
+    <section class="fade-in-up grid w-full gap-8 rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-lg backdrop-blur md:grid-cols-2 md:p-10">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-blue-700">Smartfon24 Club</p>
+        <h1 class="mt-3 text-4xl font-extrabold text-slate-900">Ro‘yxatdan o‘ting va maxsus takliflarga ega bo‘ling</h1>
+        <p class="mt-4 text-slate-600">Yangi mijozlar uchun maxsus chegirmalar, servis kuponlari va reklama aksiyalari faqat ro‘yxatdan o‘tgan foydalanuvchilar uchun.</p>
+        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1200&q=80" alt="Ro‘yxatdan o‘tish uchun reklama tasviri" class="image-zoom float-soft mt-6 h-56 w-full rounded-2xl object-cover" />
+      </div>
+
+      <form class="hover-lift rounded-2xl bg-slate-50 p-6">
+        <h2 class="text-2xl font-extrabold text-slate-900">Yangi akkaunt</h2>
+        <div class="mt-5 space-y-4">
+          <input type="text" placeholder="Ism familiya" class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-500" />
+          <input type="tel" placeholder="Telefon raqam" class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-500" />
+          <input type="email" placeholder="Email manzil" class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-500" />
+          <input type="password" placeholder="Parol" class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-500" />
+          <input type="password" placeholder="Parolni tasdiqlang" class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-500" />
+          <label class="flex items-start gap-2 text-sm text-slate-600">
+            <input type="checkbox" class="mt-1 rounded border-slate-300" />
+            Foydalanish shartlari va maxfiylik siyosatini qabul qilaman.
+          </label>
+          <button type="submit" class="btn-pop w-full rounded-xl bg-blue-600 px-4 py-3 font-bold text-white transition hover:bg-blue-700">Ro‘yxatdan o‘tish</button>
+        </div>
+        <p class="mt-5 text-sm text-slate-600">
+          Akkauntingiz bormi?
+          <a href="login.html" class="font-bold text-blue-700 hover:underline">Kirish</a>
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
